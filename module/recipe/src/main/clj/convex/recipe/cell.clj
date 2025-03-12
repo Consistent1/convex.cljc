@@ -1,6 +1,6 @@
 (ns convex.recipe.cell
 
-  "Cells represents anything that can be handled on the Convex network: data and other types such as functions.
+  "Cells represent anything that can be handled on the Convex network: data and other types such as functions.
   
    They have been modeled very closely on Clojure and many of those types will be familiar to any Clojurist.
 
@@ -47,7 +47,7 @@
   ($.cell/vector [($.cell/long 42)
                   ($.cell/keyword "foo")])
 
-  ;; Same vector using a conveninent macro...
+  ;; Same vector using a convenient macro...
   ;;
   ($.cell/* [42 :foo])
 
@@ -161,7 +161,7 @@
   ($.read/string "(+ 2 2)")
 
 
-  ;; Most commonly used when fetching smart contracts written in file.
+  ;; Most commonly used when fetching smart contracts written in files.
   ;;
   ;; For instance, this simple smart contract is used in [[convex.recipe.client]].
   ;;
