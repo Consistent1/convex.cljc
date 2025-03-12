@@ -13,7 +13,7 @@
    - Compilation                 : date -> code
    - Execution                   : code -> result
 
-   Those steps combined together form the well-known `eval`."
+   Those steps combined together, form the well-known `eval`."
 
   {:author "Adam Helinski"}
 
@@ -28,7 +28,7 @@
 
   "A `context` holds a state and allows executing operations. It is the heart of the CVM.
   
-   The state is effectively the network state that is composed of many things such as all accounts on the network.
+   The state is effectively the network state that is composed of many things, such as all accounts on the network.
 
    However, when created as such, context holds a minimal state: a few required accounts, official Convex libraries and utilities."
 
@@ -108,14 +108,14 @@
   ;;
   ;; Hence, Convex is (very probably) the first decentralized Lisp ever.
   ;;
-  ;; Lisp has been mentioned in a couple of projects, even Ethereum, but it most often about s-expression.
+  ;; Lisp has been mentioned in a couple of projects, even Ethereum, but it's most often about s-expression.
   ;; Not a full language with lambdas, macros, and eval!
   ;;
 
 
   ;; This is useful for cutting on cost.
   ;;
-  ;; When possible, it is best to compile code ahead before submitting it as a transaction. Otherwise
+  ;; When possible, it is best to compile code before submitting it as a transaction. Otherwise
   ;; peers have to compile it themselves and overall execution is simply more expensive.
   ;;
   (-> ctx
@@ -129,7 +129,7 @@
   ;; Juice is a computational unit. More complex operations require more 'juice'. This is how the cost of
   ;; a transaction is computed.
   ;;
-  ;; Hence, when using a context directly, it must be refilled once in a while otherwise we will get
+  ;; Hence, when using a context directly, it must be refilled once in a while, otherwise we will get
   ;; an `OutOfJuiceException`.
   ;;
   ($.cvm/juice-refill ctx)
